@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanksgiving Trip Itinerary</title>
+
+    <!-- Bootstrap CSS for styling and tabs -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS for styling -->
+    <style>
+        .tab-content {
+            padding: 20px;
+        }
+        #map {
+            height: 600px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="text-center my-4">Thanksgiving Trip Itinerary</h1>
+        
+        <!-- Navigation Tabs -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="itinerary-tab" data-toggle="tab" href="#itinerary" role="tab">Itinerary</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="map-tab" data-toggle="tab" href="#map-section" role="tab">Map</a>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="myTabContent">
+            <!-- Itinerary Tab -->
+            <div class="tab-pane fade show active" id="itinerary" role="tabpanel">
+                <h3 class="my-4">Itinerary by Day</h3>
+                <div id="accordion">
+                    <!-- Day 1 -->
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne">
+                                    Friday, November 22 - Arrive in LA
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li>6:43pm - Mom & Dad land in LAX</li>
+                                    <li>Stay at SLS Luxury Collection in LA - $485</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 2 -->
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo">
+                                    Saturday, November 23 - Vegas Arrival
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li>4:20pm - Brittany & Zac Land in Las Vegas</li>
+                                    <li>3:47pm - Braswell & Tara Land in Las Vegas</li>
+                                    <li>Mom & Dad Empire Concert</li>
+                                    <li>Walk around the Strip</li>
+                                    <li>Visit Old Vegas Strip</li>
+                                    <li>Kids Stay at Las Vegas Hilton Resorts World - 60k Points</li>
+                                    <li>Mom & Dad stay at SLS in LA - $485</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 3 -->
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree">
+                                    Sunday, November 24 - Exploring Las Vegas
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li>4:43pm - Mom & Dad land in Las Vegas</li>
+                                    <li>5:15pm - Mom & Dad Pick up Rental Car (Premium SUV) - $344.77</li>
+                                    <li>5:20pm - Dinner (Mom & Dad to meet there)</li>
+                                    <li>6:30pm - Be at Cirque du Soleil "O" - $208</li>
+                                    <li>Stay the night at the Bellagio 1K & 2Q - $536.60</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 4 -->
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour">
+                                    Monday, November 25 - Grand Canyon and St. George
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li>7:00am - Leave Bellagio for the Grand Canyon</li>
+                                    <li>12:00pm - Arrive at Grand Canyon, lunch and sightseeing</li>
+                                    <li>3:00pm - Drive to St. George</li>
+                                    <li>6:00pm - Check into St. George hotel (Advenire Autograph Collection) - 393.14</li>
+                                    <li>7:00pm - Dinner in St. George</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 5 -->
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive">
+                                    Tuesday, November 26 - Back to Las Vegas
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li>10:00am - Drive back to Las Vegas</li>
+                                    <li>1:00pm - Check into Bellagio</li>
+                                    <li>5:30pm - Dinner in Vegas</li>
+                                    <li>7:30pm - Arrive at Omega Mart - $64</li>
+                                    <li>Stay the night at Bellagio 1K & 2Q - $537</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 6 -->
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix">
+                                    Wednesday, November 27 - Flight to Seattle, Drive to Vancouver
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseSix" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li>9:15am - Leave hotel for airport</li>
+                                    <li>11:10am - Flight departs Las Vegas to Seattle</li>
+                                    <li>2:05pm - Land in Seattle</li>
+                                    <li>2:40pm - Pick up rental car</li>
+                                    <li>3:00pm - Drive to Vancouver</li>
+                                    <li>7:00pm - Arrive in Vancouver, check into JW Marriott Park 1K & 2Q - $647.97</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 7 -->
+                    <div class="card">
+                        <div class="card-header" id="headingSeven">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven">
+                                    Thursday, November 28 - Thanksgiving in Vancouver
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseSeven" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li>Spend the day exploring Vancouver</li>
+                                    <li>Thanksgiving dinner in Vancouver</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 8 -->
+                    <div class="card">
+                        <div class="card-header" id="headingEight">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight">
+                                    Friday, November 29 - Explore Vancouver
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseEight" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li>Continue exploring Vancouver</li>
+                                    <li>Free day to visit city attractions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 9 -->
+                    <div class="card">
+                        <div class="card-header" id="headingNine">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine">
+                                    Saturday, November 30 - Drive to Seattle
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseNine" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li>12:00pm - Drive back to Seattle</li>
+                                    <li>Explore Seattle in the evening</li>
+                                    <li>Check into W Bellview - 1K & 2Q - $480.52</li>
+                                    <li>11:41pm - Brit & Zac Depart SEA toward BNA - AS382</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 10 -->
+                    <div class="card">
+                        <div class="card-header" id="headingTen">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen">
+                                    Sunday, December 1 - Fly Home
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTen" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li>8:35am - Mom & Dad Depart SEA toward PNS - DL562</li>
+                                    <li>7:11pm - LT & LB Depart SEA toward DEN - UA297</li>
+                                    <li>7:11pm - LT & LB Land in DEN</li>
+                                    <li>4:23pm - Mom & Dad Land in PNS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Map Tab -->
+            <div class="tab-pane fade" id="map-section" role="tabpanel">
+                <h3 class="my-4">Interactive Map</h3>
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Google Maps API and Custom Map Script -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDInsR8k5VT078Gmvvky1etBpHAyrp9IZE&callback=initMap" async defer></script>
+
+    <script>
+        function initMap() {
+            // Create a map centered on Las Vegas
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 5,
+                center: {lat: 36.1699, lng: -115.1398}  // Las Vegas
+            });
+
+            // Define the locations
+            var locations = [
+                {lat: 34.0522, lng: -118.2437, title: 'Los Angeles'},
+                {lat: 36.1699, lng: -115.1398, title: 'Las Vegas'},
+                {lat: 36.1069, lng: -112.1129, title: 'Grand Canyon'},
+                {lat: 37.0965, lng: -113.5684, title: 'St. George'},
+                {lat: 47.6062, lng: -122.3321, title: 'Seattle'},
+                {lat: 49.2827, lng: -123.1207, title: 'Vancouver'}
+            ];
+
+            // Add markers for each location
+            locations.forEach(function(location) {
+                var marker = new google.maps.Marker({
+                    position: {lat: location.lat, lng: location.lng},
+                    map: map,
+                    title: location.title
+                });
+            });
+
+            // Add routes between locations
+            var flightPath = new google.maps.Polyline({
+                path: [
+                    {lat: 34.0522, lng: -118.2437},  // Los Angeles
+                    {lat: 36.1699, lng: -115.1398},  // Las Vegas
+                    {lat: 36.1069, lng: -112.1129},  // Grand Canyon
+                    {lat: 37.0965, lng: -113.5684},  // St. George
+                    {lat: 47.6062, lng: -122.3321},  // Seattle
+                    {lat: 49.2827, lng: -123.1207}   // Vancouver
+                ],
+                geodesic: true,
+                strokeColor: '#FF0000',
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+            flightPath.setMap(map);
+        }
+    </script>
+
+</body>
+</html>

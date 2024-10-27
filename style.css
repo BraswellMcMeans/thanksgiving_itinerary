@@ -1,0 +1,9 @@
+/* styles.css */
+
+.tab-content {
+    padding: 20px;
+}
+#map {
+    height: 600px;
+    width: 100%;
+}
