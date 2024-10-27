@@ -107,14 +107,13 @@ const itinerary = [
 
 // Function to load Google Maps script
 function loadGoogleMaps() {
-    const apiKey = process.env.GOOGLE_MAPS_API_KEY; // Use the environment variable
+    const apiKey = 'AIzaSyDInsR8k5VT078Gmvvky1etBpHAyrp9IZE'; // Replace with your actual API key
     const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDInsR8k5VT078Gmvvky1etBpHAyrp9IZE&callback=initMap`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`;
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
 }
-
 
 // Initialize the map only when the tab is clicked
 document.getElementById('map-tab').addEventListener('click', function() {
@@ -204,7 +203,7 @@ function loadItinerary() {
 
 // Function to fetch flight information
 async function fetchFlightInfo(flightId) {
-    const apiKey = 'INSERT_API_KEY_HERE'; 
+    const apiKey = 'INSERT_API_KEY_HERE'; // Replace with your FlightAware API key
     const response = await fetch(`https://aeroapi.flightaware.com/aeroapi/flights/${flightId}`, {
         method: 'GET',
         headers: {
@@ -236,30 +235,25 @@ async function loadFlightInformation() {
             coupleDiv.innerHTML = `<h5>${couple}</h5>`;
             const ul = document.createElement("ul");
 
-            for (const flight of flightsList) {
-                const flightData = await fetchFlightInfo(flight);
+            for (const flightId of flightsList) {
+                const flightInfo = await fetchFlightInfo(flightId);
                 const li = document.createElement("li");
-                li.innerText = `${flight} on ${flightData.date}: ${flightData.status || 'No status available'}`;
+                li.innerText = `${flightInfo.callsign} - Status: ${flightInfo.status}`;
                 ul.appendChild(li);
             }
-
             coupleDiv.appendChild(ul);
             flightInfoContent.appendChild(coupleDiv);
         }
     } catch (error) {
-        flightInfoContent.innerHTML = `<p>Error fetching flight information: ${error.message}</p>`;
+        flightInfoContent.innerHTML = "Error loading flight information.";
+        console.error(error);
     }
 }
 
-// Tab activation for flight information
-$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-    const target = $(e.target).attr("href");
-    if (target === "#flight-info") {
-        loadFlightInformation();
-    }
-});
-
-// Initialize on DOMContentLoaded
-document.addEventListener("DOMContentLoaded", () => {
+// Event listener to load the itinerary on page load
+document.addEventListener('DOMContentLoaded', () => {
     loadItinerary();
+
+    // Load flight information when the flight info tab is clicked
+    document.getElementById('flight-info-tab').addEventListener('click', loadFlightInformation);
 });
