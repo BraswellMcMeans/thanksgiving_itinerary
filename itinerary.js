@@ -109,7 +109,7 @@ const itinerary = [
 function loadGoogleMaps() {
     const apiKey = 'AIzaSyDInsR8k5VT078Gmvvky1etBpHAyrp9IZE'; // Replace with your actual API key
     const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDInsR8k5VT078Gmvvky1etBpHAyrp9IZE&callback=initMap`;
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
