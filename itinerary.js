@@ -1,7 +1,5 @@
 // itinerary.js
 
-require('dotenv').config();
-
 const itinerary = [
     {
         day: "Friday, November 22",
