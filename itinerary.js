@@ -1,4 +1,7 @@
 // itinerary.js
+
+require('dotenv').config();
+
 const itinerary = [
     {
         day: "Friday, November 22",
@@ -106,12 +109,14 @@ const itinerary = [
 
 // Function to load Google Maps script
 function loadGoogleMaps() {
+    const apiKey = process.env.GOOGLE_MAPS_API_KEY; // Use the environment variable
     const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDInsR8k5VT078Gmvvky1etBpHAyrp9IZE&callback=initMap`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`;
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
 }
+
 
 // Initialize the map only when the tab is clicked
 document.getElementById('map-tab').addEventListener('click', function() {
