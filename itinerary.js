@@ -99,7 +99,7 @@ const itinerary = [
         activities: [
             "8:35am - Mom & Dad Depart SEA toward PNS (DL562)",
             "7:11pm - Tara & Braswell Depart SEA toward DEN (UA297)",
-            "7:11pm - Tara & Braswell Land in DEN",
+            "10:55pm - Tara & Braswell Land in DEN",
             "4:23pm - Mom & Dad Land in PNS"
         ]
     }
