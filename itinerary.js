@@ -26,9 +26,10 @@ const itinerary = [
         day: "Sunday, November 24",
         title: "Exploring Las Vegas",
         activities: [
-            "4:43pm - Mom & Dad land in Las Vegas (DL3198)",
-            "5:15pm - Mom & Dad Pick up Rental Car (Premium SUV) - $344.77",
-            "5:20pm - Dinner (Mom & Dad to meet there)",
+            "12:54pm - Mom & Dad land in Las Vegas (DL1696)",
+            "1:30pm - Mom & Dad Pick up Rental Car (Premium SUV) - $344.77",
+            "2:00pm - Check  into Hotel",
+            "5:00pm - Head to Dinner",
             "6:30pm - Be at Cirque du Soleil 'O' - $208",
             "Stay the night at the Bellagio 1K & 2Q - $536.60"
         ]
