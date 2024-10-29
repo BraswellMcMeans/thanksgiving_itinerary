@@ -64,33 +64,44 @@ const itinerary = [
             "11:10am - Flight departs Las Vegas to Seattle (DL2922)",
             "2:05pm - Land in Seattle",
             "2:40pm - Pick up rental car",
-            "3:00pm - Drive to Vancouver",
-            "7:00pm - Arrive in Vancouver, check into JW Marriott Park 1K & 2Q - $647.97"
+            "3:00pm - Drive to Whistler",
+            "9:00pm - Arrive in Whistler, check into Airbnb",
+            "7:00pm - XXXXXXXArrive in Vancouver, check into JW Marriott Park 1K & 2Q - $647.97XXXXXXXX"
         ]
     },
     {
         day: "Thursday, November 28",
-        title: "Thanksgiving in Vancouver",
+        title: "Thanksgiving in Whistler",
         activities: [
-            "Spend the day exploring Vancouver",
-            "Thanksgiving dinner in Vancouver"
+            "6:00am - Wake up",
+            "7:00am - Leave airbnb to go pick up gear",
+            "8:00am - LIFTS OPEN",
+            "10:30am - Mom & Brittany & Zac Head to Scandinave Spa Whistler ($103)",
+            "3:00pm - Lifts Close. Head Back to House",
+            "4:00 - Start Making Thanksgiving dinner",
+            "7:30pm Eat Thanksgiving dinner in Vancouver"
         ]
     },
     {
         day: "Friday, November 29",
         title: "Explore Vancouver",
         activities: [
-            "Continue exploring Vancouver",
-            "Free day to visit city attractions"
+            "10:00am - Wake up",
+            "11:00am - Check out of Airbnb and head back to Vancouver",
+            "1:30pm - Arrive in Vancouver and Check into Hotel",
+            "???pm - Go to Hockey Match",
+            "???pm - Head to Dinner"
         ]
     },
     {
         day: "Saturday, November 30",
         title: "Drive to Seattle",
         activities: [
+            "10:30am - Wake up",
             "12:00pm - Drive back to Seattle",
-            "Explore Seattle in the evening",
-            "Check into W Bellevue - 1K & 2Q - $480.52",
+            "3:30pm - Arrive in Seattle and check into W Bellevue - 1K & 2Q - $480.52",
+            "6:00pm - Go to dinner",
+            "10:00pm - Drop off Brittany and Zac at the airport",
             "11:41pm - Brittany & Zac Depart SEA toward BNA (AS382)"
         ]
     },
