@@ -6,7 +6,8 @@ const itinerary = [
         title: "Arrive in LA",
         activities: [
             "6:43pm - Mom & Dad land in LAX",
-            "Stay at SLS Luxury Collection in LA - $485"
+            "7:00 Pick up AVIS rental car - $100.47",
+            "Stay at SLS Luxury Collection in LA - $484.99"
         ]
     },
     {
@@ -19,13 +20,15 @@ const itinerary = [
             "Walk around the Strip",
             "Visit Old Vegas Strip",
             "Kids Stay at Las Vegas Hilton Resorts World - 60k Points",
-            "Mom & Dad stay at SLS in LA - $485"
+            "Mom & Dad stay at SLS in LA - $484.99"
         ]
     },
     {
         day: "Sunday, November 24",
         title: "Exploring Las Vegas",
         activities: [
+            "10:30 - Mom & Dad drop off rental car",
+            "11:35am - Mom & Dad depart LAX (DL1696)",
             "12:54pm - Mom & Dad land in Las Vegas (DL1696)",
             "1:30pm - Mom & Dad Pick up Rental Car (Premium SUV) - $344.77",
             "2:00pm - Check  into Hotel",
@@ -41,7 +44,7 @@ const itinerary = [
             "7:00am - Leave Bellagio for the Grand Canyon",
             "12:00pm - Arrive at Grand Canyon, lunch and sightseeing",
             "3:00pm - Drive to St. George",
-            "6:00pm - Check into St. George hotel (Advenire Autograph Collection) - $393.14",
+            "6:00pm - Check into St. George hotel (Advenire Autograph Collection) 1K & 2Q - $393.14",
             "7:00pm - Dinner in St. George"
         ]
     },
@@ -60,13 +63,14 @@ const itinerary = [
         day: "Wednesday, November 27",
         title: "Flight to Seattle, Drive to Vancouver",
         activities: [
-            "9:15am - Leave hotel for airport",
+            "8:50am - Leave hotel and head to drop off rental car",
+            "9:15am - Drop off rental car",
             "11:10am - Flight departs Las Vegas to Seattle (DL2922)",
             "2:05pm - Land in Seattle",
-            "2:40pm - Pick up rental car",
+            "2:40pm - Pick up rental car - $449.27",
             "3:00pm - Drive to Whistler",
-            "9:00pm - Arrive in Whistler, check into Airbnb",
-            "7:00pm - XXXXXXXArrive in Vancouver, check into JW Marriott Park 1K & 2Q - $647.97XXXXXXXX"
+            "9:00pm - Arrive in Whistler, check into The Westin Resort Penthouse Suite 1K & 1Q - $1,858.42",
+
         ]
     },
     {
@@ -109,7 +113,12 @@ const itinerary = [
         day: "Sunday, December 1",
         title: "Fly Home",
         activities: [
+            "7:00am - Mom & Dad Uber to airport",
             "8:35am - Mom & Dad Depart SEA toward PNS (DL562)",
+            "10:30 - Tara & Braswell Drop off rental car downtown",
+            "11:00am - Drop off luggage for the day? - $35(6 bags)",
+            "Exlpore Seattle",
+            "5:00 - Tara & Braswell head to SEA airport",
             "7:11pm - Tara & Braswell Depart SEA toward DEN (UA297)",
             "10:55pm - Tara & Braswell Land in DEN",
             "4:23pm - Mom & Dad Land in PNS"
